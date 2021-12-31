@@ -9,10 +9,12 @@
     height: 1050px;
     overflow: hidden;
     border-radius: .5rem;
+    
 }
 .container_image_quienes_somos img{
     height: auto;
     width: 100%;
+    
 }
 
 

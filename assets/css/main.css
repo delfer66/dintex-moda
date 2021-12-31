@@ -80,14 +80,7 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
 }
-.text_titulo h2{
 
-    /*font-family: 'Pushster', cursive;*/
-
-    font-size: 3rem;
-    
-    
-}
 
 /*Formato de texto_titulos*/
 .box_border_format{
@@ -112,6 +105,11 @@ img {
     right: 50%;
     transform: translate(50%,-50%);
 }
+@media (max-width: 768px){
+    .container_titulos_seccion{
+        height: 120px;
+    }
+}
 .container_titulos_seccion h2:after{
     content: '';
     position: absolute;
@@ -124,7 +122,7 @@ img {
     right: 0%;
     margin: 0 auto;
     transform: translate(0%, 0%);
-    animation-duration: 1s;
-    animation-name: slideright_title_servicios;
+   /* animation-duration: 1s;
+    animation-name: slideright_title_servicios;**/
 }
 

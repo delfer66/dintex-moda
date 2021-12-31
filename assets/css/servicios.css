@@ -45,35 +45,12 @@
 
 
 .container_servicios_image img{
-    
     width: 100%;
     height: auto;
     border-radius: .5rem;
-    animation-duration: 3s;
-    animation-name: slidein_left_right;
-    animation-name: fadein;
   }
   
-  @keyframes slidein_left_right {
-    from {
-      transform: translate(25%, -50%);
 
-    }
-  
-    to {
-      transform: translate(0%, -50%);
-    }
-  }
-
-  @keyframes fadein {
-    from {
-      opacity: .1;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
 
 
 
@@ -120,8 +97,7 @@
         position: static;
         transform: translate(0%, 0%);
 
-        animation-duration: 2s;
-        animation-name: slidein_left_right_1;
+
     }
     .container_servicios h3{
         font-size: 1rem;
@@ -129,21 +105,8 @@
         text-align: center;
         position: static;
         transform: translate(0%, 0%);
-    
-        animation-duration: 2s;
-        animation-name: slidein_left_right_1;
-    
     }
   }
 
-  @keyframes slidein_left_right_1 {
-    from {
-      transform: translate(15%, 0%);
 
-    }
-  
-    to {
-      transform: translate(0%, 0%);
-    }
-  }
 

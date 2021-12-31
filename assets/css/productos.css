@@ -9,9 +9,7 @@
     background: rgb(137,214,49);
     background: linear-gradient(180deg, rgba(137,214,49,1) 0%, rgba(237,247,236,1) 80%);
 }
-.container_productos_cards{
-    padding: 1%;
-}
+
 
 .container_productos_cards p,
 .container_productos_cards h3{
