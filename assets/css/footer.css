@@ -1,0 +1,25 @@
+/* footer contenedor*/
+.contactenos{
+    background-color: var(--verde_primario);
+    width: 100%;
+}
+/* fondo waves*/
+.bg-contactenos{
+    width: 100%;
+}
+.bg-contactenos path{
+    fill: var(--backgroundbodycolor);
+}
+.contactenos_text{
+    top: 25%;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width_page);
+    margin-bottom: 2%;
+    /*mix-blend-mode: screen;*/
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+}
+

@@ -1,0 +1,94 @@
+.container_nuestro_clientes{
+    width: 90%;
+    margin: 8% auto;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  .container_nuestro_clientes img{
+    width: 100%;
+  }
+  /*estilos de los logos*/
+  .slider_logos_clientes .item_logo_cliente{
+    background-color: #fff;
+    box-shadow: 0 3px 5px green;
+    border-radius: 8px;
+    padding: 15px;
+    border: 2px solid rgb(177, 176, 176);
+  }
+  /*espaciado entre logos*/
+  .slider_logos_clientes .slick-slide{
+    margin: 15px;
+  }
+  /*altura de los dots*/
+  .slick-dots{
+    bottom: -40px;
+  }
+  .slick-dots li.slick-active button:before{
+    color: green;
+  }
+  /*tamaño de los dots.*/
+  .slick-dots li button:before{
+    font-size: 50px;
+  }
+  .slick-next:before,
+  .slick-prev:before{
+    color: green;
+    font-size: 30px;
+  }
+  .slick-next,
+  .slick-next:before{
+    content: "❯";
+
+  }
+  .slick-prev,
+  .slick-prev:before{
+    content: "❮";
+
+  }
+  /*efecto_ampliación_logo*/
+  .item_logo_cliente:hover{
+    display: block;
+    transition: all ease 0.3s;
+    transform: scale(1.1) translateY(-5px);
+  }
+
+
+  
+  @media (max-width: 1100px){
+  .slider_logos_clientes .item_logo_cliente{
+    padding: 1px;
+
+  }
+  /*tamaño de los dots.*/
+  .slick-dots li button:before{
+    font-size: 60px;
+  }
+  }
+
+  @media (max-width: 888px){
+  /*margenes generales*/
+  .container_nuestro_clientes{
+    margin: 12px auto;
+    margin-bottom: 72px;
+  }
+  /*estilos de los logos*/
+  .slider_logos_clientes .item_logo_cliente{
+    padding: 1px;
+
+  }
+  /*tamaño de los dots.*/
+  .slick-dots li button:before{
+    font-size: 90px;
+  }
+  /*efecto_ampliación_logo*/
+  .item_logo_cliente:hover{
+    transform: scale(1.05) translateY(-5px);
+  }
+  }
+
+  @media (max-width: 768px){
+    .container_nuestro_clientes h2{
+      font-size: 25px;
+    }
+  }

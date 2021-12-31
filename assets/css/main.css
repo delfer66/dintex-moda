@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Moon+Dance&display=swap');
+
+
+@import 'animaciones.css';  
+@import 'header.css';  
+@import 'quienes_somos.css';  
+@import 'productos.css';  
+@import 'servicios.css';  
+@import 'nuestros_clientes.css';
+@import 'formulario.css';
+@import 'footer.css';
+@import 'social_fab.css';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --verde_primario: #83c451;
+    /*--verde_primario: #89d631;*/
+    --negro_primario_texto: #343a40;
+    --white: #ffffff;
+    /*--backgroundbodycolor: #f1fff0;*/
+    --backgroundbodycolor: #fdfdfd;
+    --max-width_page: 1920px;
+  }
+
+.bodystyles{
+    
+    width: 100%;
+    background-color: var(--backgroundbodycolor);
+    /*
+    font-family: Palatino Linotype, Georgia, Oxygen, Roboto, 'Segoe UI', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    */
+    /*background-color: #EDEDED;*/
+    /*
+    /*FUENTES*/
+    font-family: Georgia, Palatino Linotype, Book Antiqua;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+
+    
+}
+img {
+    /*anula facilidad de guardado de imagenes*/
+    pointer-events: none;
+}
+.clearfix{
+    clear:both;
+    float:none;
+}
+
+
+.container_center{
+    margin: 2% auto;
+    padding-bottom: 2%;
+    width: 95%;
+    max-width: var(--max-width_page);
+    /*background-color: var(--white);*/
+    background-color: #edf7ec;
+    box-shadow: 0 1px 1px 0 rgba(99, 99, 99, 0.2);
+    border-radius: .5rem;
+}
+
+
+.barra_inicio{
+    height: 63px;
+    width: 100%;
+}
+
+
+/*Formato de texto_titulos*/
+.text_titulo{
+    color: var(--negro_primario_texto);
+    text-shadow: 1px 1px 3px white;
+    background-color: var(--verde_primario);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+}
+.text_titulo h2{
+
+    /*font-family: 'Pushster', cursive;*/
+
+    font-size: 3rem;
+    
+    
+}
+
+/*Formato de texto_titulos*/
+.box_border_format{
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0,124,0,0.2);;
+}
+
+/*Tititulos de cada sección*/
+.container_titulos_seccion{
+    margin: 2% auto;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: var(--verde_primario);
+}
+.container_titulos_seccion h2{
+    width: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+.container_titulos_seccion h2:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    box-shadow: 1px 1px 2px 0px white;
+    background-color: var(--negro_primario_texto);
+    border-radius: 5px;
+    bottom: -20%;
+    right: 0%;
+    margin: 0 auto;
+    transform: translate(0%, 0%);
+    animation-duration: 1s;
+    animation-name: slideright_title_servicios;
+}
+

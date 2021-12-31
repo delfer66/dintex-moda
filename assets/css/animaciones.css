@@ -1,0 +1,136 @@
+.animation_enfasis{
+    background: linear-gradient(89deg, #89d631, #ffffff, #89d631);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    -o-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+.anim_fade_title{
+    background: linear-gradient(129deg, #89d631, #b5f968, #89d631);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName1 11s ease infinite;
+    -moz-animation: AnimationName1 11s ease infinite;
+    -o-animation: AnimationName1 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+@-webkit-keyframes AnimationName1 {
+    0%{background-position:9% 0%}
+    50%{background-position:92% 100%}
+    100%{background-position:9% 0%}
+}
+@-moz-keyframes AnimationName1 {
+    0%{background-position:9% 0%}
+    50%{background-position:92% 100%}
+    100%{background-position:9% 0%}
+}
+@-o-keyframes AnimationName1 {
+    0%{background-position:9% 0%}
+    50%{background-position:92% 100%}
+    100%{background-position:9% 0%}
+}
+@keyframes AnimationName1 {
+    0%{background-position:9% 0%}
+    50%{background-position:92% 100%}
+    100%{background-position:9% 0%}
+}
+
+@keyframes slideright_title_servicios {
+    from {
+    transform: translate(50%, 0%);
+    opacity: .5;
+    }
+    
+    to {
+    transform: translate(0%, 0%);
+    opacity: 1;
+    }
+}
+
+@keyframes slide_quienes_somos_text {
+    from {
+    transform: translate(0%, 50%);
+    opacity: .5;
+    }
+
+    to {
+    transform: translate(0%, 0%);
+    opacity: 1;
+    }
+}
+
+@keyframes slide_quienes_somos_image {
+    from {
+    transform: scale(0.7);
+    transform: translate(0%, 25%);
+    opacity: .5;
+    }
+    
+    to {
+    transform: scale(1.0);
+    transform: translate(0%, 0%);
+    opacity: 1;
+    }
+    }
+
+
+
+    .animation_latir{
+        animation: latir infinite 5s linear;
+        }
+        
+        @keyframes latir {
+            0% {
+                transform: scale(1, 1);
+            }
+        
+            50% {
+                transform: scale(1.05, 1.05);
+            }
+        
+            55%{
+                transform: scale(0.95, 0.95);
+            }
+        
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+        
+        .animation_brillar_logo{
+            animation: brillar infinite 15s linear;
+            }
+            
+            @keyframes brillar {
+                50% {
+                    
+                    box-shadow: 0 0 20px var(--verde_primario);
+                }
+            }
+        
+        @media (max-width: 768px){
+            .container_titulos_seccion h2{
+                font-size: 1.5rem;
+            }
+        }

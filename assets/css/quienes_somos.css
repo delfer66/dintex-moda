@@ -1,0 +1,95 @@
+
+.content_quienes_somos{
+    width: 100%;
+}
+
+.container_image_quienes_somos{
+    float: left;
+    width: 50%;
+    height: 1050px;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+.container_image_quienes_somos img{
+    height: auto;
+    width: 100%;
+}
+
+
+.content_frase_quienes_somos{
+    float: right;
+    width: 50%;
+    position: sticky;
+    top: 63px;
+}
+.frase_quienes_somos{
+    margin-left: 2%;
+}
+
+/*editar accordion sin scss*/
+.accordion-button {
+    color: var(--verde_primario) !important;
+    background-color: white !important;
+  }
+.accordion-button.collapsed {
+    color: white !important;
+    background: var(--verde_primario)!important;
+  }
+.accordion-button::after {
+   
+}
+.accordion-button:focus{
+    border-color: green !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
+}
+
+
+
+@media (max-width: 1400px){
+    .container_image_quienes_somos{
+        height: 800px;
+    } 
+}
+@media (max-width: 1100px){
+    .container_image_quienes_somos{
+        height: 600px;
+    } 
+}
+@media (max-width: 768px){
+    .container_image_quienes_somos{
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+    
+    .content_frase_quienes_somos{
+        float: none;
+        width: 100%;
+    }
+    
+    .frase_quienes_somos{
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .frase_quienes_somos1{
+        color: green;
+        font-size: 26px; 
+    }
+    .frase_quienes_somos2{
+        color: rgb(11, 41, 12);
+        font-size: 16px;
+    }
+    .frase_quienes_somos3{
+        color: rgb(49, 49, 49);
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
+
+@media (max-width: 430px){
+    .container_image_quienes_somos{
+        height: 400px;
+    }
+}
