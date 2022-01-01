@@ -63,6 +63,7 @@ img {
     background-color: #edf7ec;
     box-shadow: 0 1px 1px 0 rgba(99, 99, 99, 0.2);
     border-radius: .5rem;
+    
 }
 
 
@@ -96,6 +97,7 @@ img {
     height: 150px;
     position: relative;
     background-color: var(--verde_primario);
+    border-radius: .5rem;
 }
 .container_titulos_seccion h2{
     width: auto;

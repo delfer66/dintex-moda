@@ -1,3 +1,7 @@
+.contenedor_servicios{
+  overflow: hidden;
+}
+
 .container_servicios{
     margin: 2% auto;
     width: 100%;
