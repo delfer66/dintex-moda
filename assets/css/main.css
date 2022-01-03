@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Moon+Dance&display=swap');
 
 
-@import 'animaciones.css';  
+@import 'animaciones.css';
+@import 'navbar.css';
 @import 'header.css';  
 @import 'quienes_somos.css';  
 @import 'productos.css';  

@@ -2,6 +2,7 @@
 .contactenos{
     background-color: var(--verde_primario);
     width: 100%;
+    overflow: hidden;
 }
 /* fondo waves*/
 .bg-contactenos{

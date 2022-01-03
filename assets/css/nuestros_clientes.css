@@ -1,5 +1,6 @@
 .container_productos_total{
   width: 100%;
+  overflow: hidden;
 }
 .container_nuestro_clientes{
     width: 90%;

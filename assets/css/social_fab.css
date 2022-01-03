@@ -65,16 +65,16 @@
 
 @keyframes vibrar_circulo{
     from{
-        transform: scale3d(5.5, 5.5, 1);
+        /*transform: scale3d(5.5, 5.5, 1);*/
         background-color: hsl(113, 98%, 60%);
     }
     50%{
-        transform: scale3d(5.3, 5.3, 1);
+        /*transform: scale3d(5.3, 5.3, 1);**/
         background-color: hsl(105, 80%, 40%);
     }
     to{
         background-color: hsl(113, 98%, 60%);
-        transform: scale3d(5.5, 5.5, 1);
+        /*transform: scale3d(5.5, 5.5, 1);*/
     }
 }
   

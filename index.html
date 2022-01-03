@@ -18,26 +18,25 @@
     <!--slick-min-->
     <link rel="stylesheet" type="text/css" href="./assets/css/slick-min.css">
     <!--HOJA DE ESTILOS-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <!--AOS_Animaciones usa js-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Animate.css-->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Bootstrap CSS usa js -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
 
 </head>
 
 <body class="bodystyles">
 
 
-    <!--Off-set del menu-->
-    <div id="inicio" class="barra_inicio animation_enfasis">
-    </div>
 
 
     <!--Nav Bar-->
-    <div class="slider_brand ">
+    <div class="slider_brand headroom headroom--pinned headroom--unpinned">
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top ">
             <div class="container-fluid">
                 <a class="navbar-brand animation_brillar_logo" href="#inicio">
@@ -80,13 +79,16 @@
 
 
 
+    <!--Off-set del menu-->
+    <div id="inicio" class="barra_inicio animation_enfasis">
+    </div>
 
 
 
 
 
     <!--Header-->
-    <header class="header_slider">
+    <header class="header_slider  animate__animated animate__backInUp">
         <a class="brand_container animation_latir" onclick="document.getElementById('fab_circularMenu').classList.toggle('active');">
 
             <img class="brand1" src="assets/images/logo_dintex/dintex_logo_texto.svg" fill="#ffffff" alt="Dintex_logo">
@@ -253,7 +255,7 @@
 
                 </div>
             </div>
-            <div class="container_image_quienes_somos box_border_format" data-aos="zoom-in-right">
+            <div class="container_image_quienes_somos box_border_format" data-aos="zoom-in-up">
                 <img src="assets/images/productos/dintexmoda_producto_001.jpg" alt="imagen_quines_somos" />
             </div>
             <div class="clearfix"></div>
@@ -279,7 +281,7 @@
 
             <div class="container_productos_global">
                 <div class="container_productos_cards row p-2">
-                    <div class="col-sm-6 col-md-4 my-2">
+                    <div class="col-sm-6 col-md-4 my-2" data-aos="fade-up-right">
                         <div class="card text-center">
                             <div class="card-body ">
                                 <h3 class="card-title">Terno de Dama</h3>
@@ -291,7 +293,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 my-2">
+                    <div class="col-sm-6 col-md-4 my-2" data-aos="zoom-in-up">
                         <div class="card text-center">
                             <div class="card-body">
                                 <img src="./assets/images/productos/dintexmoda_terno-caballero_001.jpg"
@@ -305,7 +307,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 my-2">
+                    <div class="col-md-4 my-2" data-aos="fade-up-left">
                         <div class="card text-center">
                             <div class="card-body">
                                 <h3 class="card-title">Ropa de Trabajo</h3>
@@ -533,7 +535,7 @@
         </div>
         <div class="contactenos_text">
             <div class="row justify-content-center m-2">
-                <div class="col-xl-3 col-lg-4 d-lg-flex align-items-center justify-content-end">
+                <div class="col-xl-3 col-lg-4 d-lg-flex align-items-center justify-content-end" data-aos="fade-up-right">
 
                     <div class="p-2 m-2 bg-body shadow rounded ">
                         <img class="d-block m-auto" src="./assets/images/logo_dintex/dintex_logo.svg" alt="Logo"
@@ -541,7 +543,7 @@
 
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in-up">
                     <div class="p-2 m-2 fs-6 bg-body shadow rounded">
                         <strong>Dirección:</strong> <br>
                         Calle Jaspe N88A y Perla, Sector Carcelén <br>(Barrio la Josefina)<br>
@@ -554,7 +556,7 @@
                         (código de área Ecuador +593)
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 d-lg-flex align-items-center justify-content-start">
+                <div class="col-xl-3 col-lg-4 col-md-6 d-lg-flex align-items-center justify-content-start" data-aos="fade-up-left">
                     <div class="p-2 m-2 fs-6 bg-body shadow rounded">
                         <a>
                             <strong>Gerencia</strong> <br>
@@ -579,8 +581,8 @@
 
 
     <!-- Fab -->
-    <div id="fab_circularMenu" class="circular-menu">
-        <a class="floating-btn animation_latir" onclick="document.getElementById('fab_circularMenu').classList.toggle('active');">
+    <div id="fab_circularMenu" class="circular-menu animate__animated animate__pulse animate__slow animate__infinite">
+        <a class="floating-btn  " onclick="document.getElementById('fab_circularMenu').classList.toggle('active');">
             <i class="fa fa-plus">
                 <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
                     class="bi bi-plus-circle" viewBox="0 0 16 16">
@@ -623,8 +625,9 @@
 
 
 
-
-
+    <!-- Hidding_navbar_on_scrolling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
+    <script src="./assets/js/hidding_navbar_on_scrolling.js"></script>
     <!-- AOS animaciones al realizar scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
