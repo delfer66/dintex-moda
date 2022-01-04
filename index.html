@@ -22,12 +22,12 @@
     <!--AOS_Animaciones usa js-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Animate.css-->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Bootstrap CSS usa js -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Boton Google-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="bodystyles">
@@ -89,7 +89,8 @@
 
     <!--Header-->
     <header class="header_slider  animate__animated animate__backInUp">
-        <a class="brand_container animation_latir" onclick="document.getElementById('fab_circularMenu').classList.toggle('active');">
+        <a class="brand_container animation_latir"
+            onclick="document.getElementById('fab_circularMenu').classList.toggle('active');">
 
             <img class="brand1" src="assets/images/logo_dintex/dintex_logo_texto.svg" fill="#ffffff" alt="Dintex_logo">
 
@@ -148,8 +149,7 @@
 
         <!--quienes_somos-->
         <section class="content_quienes_somos " data-aos="fade-up">
-            <div id="quienes_somos" class="container_titulos_seccion fs-1 anim_fade_title "
-                data-aos="fade-up-right">
+            <div id="quienes_somos" class="container_titulos_seccion fs-1 anim_fade_title " data-aos="fade-up-right">
                 <h2>¿QUIENES SOMOS?</h2>
             </div>
 
@@ -274,9 +274,9 @@
 
 
         <!--productos-->
-        <section id="productos"  class="container_productos_total">
+        <section id="productos" class="container_productos_total">
             <div class="container_titulos_seccion fs-1 anim_fade_title" data-aos="fade-up-right">
-                <h2 >NUESTROS PRODUCTOS</h2>
+                <h2>NUESTROS PRODUCTOS</h2>
             </div>
 
             <div class="container_productos_global">
@@ -329,18 +329,19 @@
                                         </div>
                                         <div class="carousel-inner ">
                                             <div class="carousel-item active">
-                                                <img src="./assets/images/productos/dintexmoda_ropa-trabajo_001.jpg" class=" rounded"
-                                                    alt="...">
+                                                <img src="./assets/images/productos/dintexmoda_ropa-trabajo_001.jpg"
+                                                    class=" rounded" alt="...">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="./assets/images/productos/dintexmoda_producto_001.jpg" class=" rounded" alt="dintexmoda_producto_001">
+                                                <img src="./assets/images/productos/dintexmoda_producto_001.jpg"
+                                                    class=" rounded" alt="dintexmoda_producto_001">
                                                 <div class="carousel-caption d-none d-md-block">
                                                     <p class="bg-light">Con estilo para su empresa</p>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="./assets/images/productos/dintexmoda_terno-dama_001.jpg" class=" rounded"
-                                                    alt="dintexmoda_terno-dama">
+                                                <img src="./assets/images/productos/dintexmoda_terno-dama_001.jpg"
+                                                    class=" rounded" alt="dintexmoda_terno-dama">
                                                 <div class="carousel-caption d-none d-md-block">
                                                     <p class="bg-light"><strong>Nada como un terno </strong> de vestir
                                                         para mujeres para decir que te dedicas a
@@ -421,8 +422,7 @@
 
 
         <!--nuestro_clientes-->
-        <div id="nuestro_clientes" class="container_titulos_seccion fs-1 anim_fade_title"
-            data-aos="fade-up-right">
+        <div id="nuestro_clientes" class="container_titulos_seccion fs-1 anim_fade_title" data-aos="fade-up-right">
             <h2>NUESTROS CLIENTES</h2>
         </div>
         <section class="container_nuestro_clientes">
@@ -460,60 +460,174 @@
             <div class="container_titulos_seccion fs-1 anim_fade_title" data-aos="fade-up-right">
                 <h2>CONTACTANOS</h2>
             </div>
-
-            <div class="container_formulario box_border_format" data-aos="zoom-in">
-                <form class="row g-3">
-                    <div class="col-md-12">
-                        <label for="inputName" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="inputPassword4">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputLastname" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="inputAddress2">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4"
-                            placeholder="@gmail, @hotmail, @outlook">
-                    </div>
-
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="">
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">Provincia</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Pichincha</option>
-                            <option selected>Guayas</option>
-                            <option selected>Cuenca</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Code</label>
-                        <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Recibir promociones y anuncios.
-                            </label>
+            <div class="container_contactanos_total">
+                <div class="container_social_networks box_border_format" data-aos="zoom-in">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center py-3">Siguenos en</h3>
+                            <div class="row g-3 rounded py-1">
+                                <div class="col-4 col-sm-2 w-auto d-block m-auto"><a target="_blank" href="https://www.facebook.com/dintexmodaempresarial/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                                            fill="#3b5998" class="facebook_form" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg></a>
+                                </div>
+                                <div class="col-4 col-sm-2 w-auto d-block m-auto"><a href="#" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                                            fill="#00acee" class="twitter_form" viewBox="0 0 16 16">
+                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                        </svg></a>
+                                </div>
+                                <div class="col-4 col-sm-2 w-auto d-block m-auto"><a href="#" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                                            fill="#E60023" class="pinterest_form" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" />
+                                        </svg></a>
+                                </div>
+                                <div class="col-4 col-sm-2 w-auto d-block m-auto"><a target="_blank" href="https://instagram.com/dintexmoda.ec" >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                                            fill="#ffffff" class="instagram_form" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                        </svg></a>
+                                </div>
+                                <div class="col-4 col-sm-2 w-auto d-block m-auto"><a href="https://wa.me/+593996338385?text=Hola,%20Quisiera%20consultar%20sobre%20los%20uniformes%20para%20mi%20empresa." target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42"
+                                    fill="#00bb2d" class="whatsapp_form" viewBox="0 0 448 512">
+                                        <path d="M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z"></path>
+                                    </svg></a>
+                                </div>
+                                <div class="col-4 col-sm-2 w-auto d-block m-auto"><a href="#" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                                            fill="#343a40" class="email_form" viewBox="0 0 16 16">
+                                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <p class="card-text text-center py-3">Mantente siempre actualizado y recibe información,
+                                contactanos tambien en nuestras redes sociales oficiales</p>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+
+
+                <div class="container_formulario box_border_format mt-3" data-aos="zoom-in">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">o tambien llene el formulario</h3>
+                            <p class="card-text text-center ">
+                                Si estas interesado en vestir a toda tu empresa con nosotros
+                            </p>
+                            <form class="row g-3 p-2">
+                                <div class="col-md-6">
+                                    <label for="inputName" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="inputName1" autocomplete="true"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputLastname" class="form-label">Apellido</label>
+                                    <input type="text" class="form-control" id="inputLastname1" autocomplete="true"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPhone" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="inputZip" autocomplete="true" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail1"
+                                        placeholder="Su email: ejemplo@gmail, ejemplo@hotmail" autocomplete="true"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Su Dirección"
+                                        autocomplete="true" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">Ciudad</label>
+                                    <input type="text" class="form-control" id="inputCity" placeholder=""
+                                        autocomplete="true">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputState" class="form-label">Provincia</label>
+                                    <select id="inputState" class="form-select">
+                                        <option>Otra</option>
+                                        <option selected>Pichincha</option>
+                                        <option>Guayas</option>
+                                        <option>Cuenca</option>
+                                        <option>Soy de Fuera Ecuador</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="inputState" class="form-label">Uniformes requeridos</label>
+                                    <select id="inputState" class="form-select">
+                                        <option>1 a 10 Uniformes</option>
+                                        <option selected>11 a 100 Uniformes</option>
+                                        <option>101 a 500 Uniformes</option>
+                                        <option>mas de 500 Uniformes</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input btn-success" type="checkbox" id="gridCheck" checked>
+                                        <label class="form-check-label" for="gridCheck">
+                                            Deseo información, promociones y anuncios.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="g-recaptcha" data-theme="light" 
+                                        data-sitekey="6LdJu-cdAAAAAAx7wwgc2bFD8L1Z5ZwmevHxzOEX"
+                                        data-size="normal" data-callback="pushed_bottom"
+                                        data-expired-callback="captchaExpired">
+                                    </div>
+                                </div>
+                                <div id="status"></div>
+                                <div class="col-12">
+                                    <button id="register-btn" type="submit" class="btn btn-success"
+                                        onclick="enviar_formulario()" disabled aria-disabled="true">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </form>
+                </div>
+
+                <div class="container_formulario box_border_format mt-3" data-aos="zoom-in">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Nuestras Oficinas</h3>
+                            <p class="card-text text-center ">
+                                Horario de Atención: Lunes a Viernes de 8am a 5pm.
+                            </p>
+                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d498.7268175048106!2d-78.474258!3d-0.0788723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58fa7307d8895%3A0xe8c4d3812033eebd!2sDintex%20Moda%20Empresarial!5e0!3m2!1ses!2sec!4v1641240076183!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+            
             </div>
         </section>
 
+
+
+
+        <script type="text/javascript">
+            function pushed_bottom() {
+                var registerBtn = document.querySelector('#register-btn');
+                registerBtn.removeAttribute('disabled');
+                registerBtn.removeAttribute('aria-disabled');
+                registerBtn.style.cursor = 'pointer';
+            }
+            function enviar_formulario() {
+                var response = grecaptcha.getResponse();
+                if (response.legth != 0)
+                    window.open("https://www.google.com/");
+                else
+                    document.getElementById('status').innerHTML = "Por favor acepte primero el captcha."
+            }
+            function captchaExpired() {
+                grecaptcha.reset();
+            }
+        </script>
 
 
         <!--Fin Centro-->
@@ -535,7 +649,8 @@
         </div>
         <div class="contactenos_text">
             <div class="row justify-content-center m-2">
-                <div class="col-xl-3 col-lg-4 d-lg-flex align-items-center justify-content-end" data-aos="fade-up-right">
+                <div class="col-xl-3 col-lg-4 d-lg-flex align-items-center justify-content-end"
+                    data-aos="fade-up-right">
 
                     <div class="p-2 m-2 bg-body shadow rounded ">
                         <img class="d-block m-auto" src="./assets/images/logo_dintex/dintex_logo.svg" alt="Logo"
@@ -546,7 +661,9 @@
                 <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in-up">
                     <div class="p-2 m-2 fs-6 bg-body shadow rounded">
                         <strong>Dirección:</strong> <br>
-                        Calle Jaspe N88A y Perla, Sector Carcelén <br>(Barrio la Josefina)<br>
+                        <a href="https://goo.gl/maps/cWmXDKVdkLV6GL5n7" target="_blank">
+                        Calle Jaspe N88A y Perla, Sector Carcelén</a>
+                        <br>(Barrio la Josefina)<br>
                         Quito-Ecuador<br>
                         <strong>Teléfono:</strong> <br>
                         25106358 - 25009945 <br>
@@ -556,15 +673,16 @@
                         (código de área Ecuador +593)
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 d-lg-flex align-items-center justify-content-start" data-aos="fade-up-left">
+                <div class="col-xl-3 col-lg-4 col-md-6 d-lg-flex align-items-center justify-content-start"
+                    data-aos="fade-up-left">
                     <div class="p-2 m-2 fs-6 bg-body shadow rounded">
                         <a>
                             <strong>Gerencia</strong> <br>
-                            Gerencia1()dindexmoda.com
+                            gerencia@dindexmoda.com
                         </a>
                         <a>
                             <br><strong>Ventas corporativas</strong> <br>
-                            Ventas()dindexmoda.com
+                            ventas@dindexmoda.com
                         </a>
                     </div>
                 </div>
@@ -597,31 +715,38 @@
             <a href="https://www.facebook.com/dintexmodaempresarial/" class="menu-item fa fa-facebook" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor"
                     class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                 </svg>
             </a>
             <a href="https://wa.me/+593996338385?text=Hola,%20Quisiera%20consultar%20sobre%20los%20uniformes%20para%20mi%20empresa."
                 class="menu-item fa fa-whatsapp" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor"
                     class="bi bi-whatsapp" viewBox="0 0 16 16">
-                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                    <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
                 </svg>
             </a>
-            <a href="#" class="menu-item fa fa-instagram">
+            <a href="https://instagram.com/dintexmoda.ec" target="_blank" class="menu-item fa fa-instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor"
                     class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                 </svg>
 
             </a>
-            <a href="#" class="menu-item fa fa-email">
+            <a href="mailto:ventas@dintexmoda.com?Subject=Venta%20de%20uniformes%20" class="menu-item fa fa-email" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-email"
                     viewBox="0 0 16 16">
-                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                    <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
                 </svg>
             </a>
         </menu>
     </div>
+
+
+
 
 
 
@@ -635,9 +760,8 @@
     </script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 
 </body>
 

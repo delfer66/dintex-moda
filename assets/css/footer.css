@@ -16,11 +16,12 @@
     left: 50%;
     width: 100%;
     max-width: var(--max-width_page);
-    margin-bottom: 2%;
-    /*mix-blend-mode: screen;*/
+    margin: auto;
+
 }
 .copyright{
     width: 100%;
+    margin-top: 2%;
     text-align: center;
 }
 
