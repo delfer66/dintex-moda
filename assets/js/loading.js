@@ -5,11 +5,31 @@ $(document).ready(function() {
 });
 */
 
-
+/*
 //quita la pantalla de carga justo cuando se carga la imagen
+//OJO NO siempre funciona
 $('#imagen_portada')
-    .on('load', function() { $("#loader").fadeOut(2000); })
+    .on('load', function() { console.log("image cargada"); $("#loader").fadeOut(2000); })
+    .on('ready', function() { console.log("image ready"); $("#loader").fadeOut(2000); })
     .on('error', function() { console.log("error loading image");  $("#loader").fadeOut(2000);})
+*/
+
+
+//quita la pantalla de carga cuanto los elementos estan cargados
+var image1 = document.getElementById('imagen_portada');
+$(document).ready(function() {
+    intervalo1 = setInterval(function(){
+        //console.log(image1.complete);
+        //console.log(image1.naturalHeigh);
+        if(image1.complete && image1.naturalHeight !== 0){
+            //console.log(image1.complete);
+            //console.log(image1.naturalHeigh);
+            //console.log("image cargada x2"); 
+            $("#loader").fadeOut(2000);
+            clearInterval(intervalo1);
+        }
+    },1000);
+});
 
 
 
@@ -42,6 +62,10 @@ $('#imagen_portada')
             i=0;
          });
       });
+
+
+
+
     /*
 $("<img/>")
     .on('load', function() { console.log("image loaded correctly"); })
