@@ -43,3 +43,4 @@ let widthOutput = $(window).width();
       autoplaySpeed: 3000,
       infinite: true
     });
+

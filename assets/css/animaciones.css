@@ -1,39 +1,72 @@
 .animation_enfasis{
     background: linear-gradient(89deg, #89d631, #ffffff, #89d631);
     background-size: 600% 600%;
-    -webkit-animation: AnimationName 12s ease infinite;
-    -moz-animation: AnimationName 12s ease infinite;
-    -o-animation: AnimationName 12s ease infinite;
-    animation: AnimationName 12s ease infinite;
+    -webkit-animation: AnimationName2 20s ease infinite;
+    -moz-animation: AnimationName2 20s ease infinite;
+    -o-animation: AnimationName2 20s ease infinite;
+    animation: AnimationName2 20s ease infinite;
 }
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes AnimationName2 {
     0%{background-position:0% 51%}
     50%{background-position:100% 50%}
     100%{background-position:0% 51%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes AnimationName2 {
     0%{background-position:0% 51%}
     50%{background-position:100% 50%}
     100%{background-position:0% 51%}
 }
-@-o-keyframes AnimationName {
+@-o-keyframes AnimationName2 {
     0%{background-position:0% 51%}
     50%{background-position:100% 50%}
     100%{background-position:0% 51%}
 }
-@keyframes AnimationName {
+@keyframes AnimationName2 {
     0%{background-position:0% 51%}
     50%{background-position:100% 50%}
     100%{background-position:0% 51%}
 }
 
-.anim_fade_title{
+
+
+
+
+.anim_fade_title3 {
+    background: linear-gradient(197deg, #83c451, #ffffff);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:88% 0%}
+    50%{background-position:13% 100%}
+    100%{background-position:88% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:88% 0%}
+    50%{background-position:13% 100%}
+    100%{background-position:88% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:88% 0%}
+    50%{background-position:13% 100%}
+    100%{background-position:88% 0%}
+}
+
+
+
+
+
+.anim_fade_title1{
     background: linear-gradient(129deg, #89d631, #b5f968, #89d631);
     background-size: 600% 600%;
     -webkit-animation: AnimationName1 11s ease infinite;
     -moz-animation: AnimationName1 11s ease infinite;
     -o-animation: AnimationName1 11s ease infinite;
-    animation: AnimationName 11s ease infinite;
+    animation: AnimationName1 11s ease infinite;
 }
 @-webkit-keyframes AnimationName1 {
     0%{background-position:9% 0%}
@@ -55,6 +88,8 @@
     50%{background-position:92% 100%}
     100%{background-position:9% 0%}
 }
+
+
 
 @keyframes slideright_title_servicios {
     from {

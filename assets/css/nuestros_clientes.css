@@ -1,6 +1,11 @@
+#nuestro_clientes{
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
 .container_productos_total{
   width: 100%;
-  overflow: hidden;
+  
 }
 .container_nuestro_clientes{
     width: 90%;
@@ -11,6 +16,7 @@
 
   .container_nuestro_clientes img{
     width: 100%;
+    height: 50%;
   }
   /*estilos de los logos*/
   .slider_logos_clientes .item_logo_cliente{

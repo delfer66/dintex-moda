@@ -1,4 +1,5 @@
 .section_formulario{
+    margin-top: 2rem;
     width: 100%;
     overflow: hidden;
 }
@@ -11,13 +12,16 @@
     width: 50%;
     max-width: 700px;
     min-width: 600px;
-    
 }
-
-
-
+/* CSS para cambiar color a bootstrap*/
+.form-check-input{
+  background-color: white !important;
+}
+.form-check-input:checked{
+  background-color: var(--verde_primario) !important;
+  border-color: var(--verde_primario) !important;
+}
 /*social network*/
-
 
 
 @media (max-width: 768px){
@@ -66,7 +70,7 @@
     transform: scale(1.1);
     transition: transform .3s ease, fill .2s ease;
   }
-  .twitter_form:hover{
+  .linkedin_form:hover{
     fill: var(--verde_primario);
     transform: scale(1.1);
     transition: transform .3s ease, fill .2s ease;
