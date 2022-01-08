@@ -1,0 +1,12 @@
+.box_format_card{
+    border-radius: .5rem;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0,124,0,0.2);
+}
+
+.box_format_card:hover{
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: .1px outset black;
+}
+

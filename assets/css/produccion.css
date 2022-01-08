@@ -1,0 +1,39 @@
+.contenedor_servicios{
+  margin: 2rem 0;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+
+
+
+.container_servicios_image{
+  width: 86%;
+  max-width: 1280px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: .5rem;
+}
+.container_servicios_image img{
+    width: 100%;
+    height: auto;
+    background-color: var(--verde_primario);
+    max-width: 1280px;
+    max-height: 721px;
+    border-radius: .5rem;
+  }
+  
+
+
+
+
+
+
+  @media (max-width: 768px){
+    .container_servicios{
+      height: auto;
+      position:static;
+    }
+  }
+
+
+

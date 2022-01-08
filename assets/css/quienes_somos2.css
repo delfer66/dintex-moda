@@ -1,0 +1,31 @@
+.contenedor2_quines{
+    width: 80%;
+    display: block;
+    margin: auto;
+    
+}
+.accordion_quienes_somos2{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 1200px){
+    .contenedor2_quines{
+        width: 90%;
+    }
+    .accordion_quienes_somos2{
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px){
+    .contenedor2_quines{
+        width: 98%;
+    }
+    .accordion_quienes_somos2{
+        width: 98%;
+    }
+
+}
+

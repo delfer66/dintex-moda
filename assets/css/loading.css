@@ -16,6 +16,34 @@
     transform: translate(-50%,-50%);
 }
 
-.contenido_loader p{
+.loader_texto{
+    display: block;
+    margin: auto;
     text-align: center;
+    width: 50%;
+}
+
+.stop-scroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  
+@media (max-width: 992px){
+    .loader_texto{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px){
+    .loader_texto{
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px){
+    .loader_texto{
+        width: 100%;
+    }
 }

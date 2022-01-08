@@ -15,6 +15,10 @@ $('#imagen_portada')
 */
 
 
+//quita el scroll mientras carga la pagina
+var scroll_Stop = document.getElementById('body_id');
+scroll_Stop.classList.remove('stop-scroll');
+
 //quita la pantalla de carga cuanto los elementos estan cargados
 var image1 = document.getElementById('imagen_portada');
 $(document).ready(function() {
@@ -25,8 +29,10 @@ $(document).ready(function() {
             //console.log(image1.complete);
             //console.log(image1.naturalHeigh);
             //console.log("image cargada x2"); 
-            $("#loader").fadeOut(2000);
+            
+            $("#loader").fadeOut(1000);
             clearInterval(intervalo1);
+            
         }
     },1000);
 });
@@ -62,7 +68,6 @@ $(document).ready(function() {
             i=0;
          });
       });
-
 
 
 

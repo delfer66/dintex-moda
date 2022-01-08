@@ -7,12 +7,16 @@
 @import 'loading.css';
 @import 'navbar.css';
 @import 'header.css';  
-@import 'quienes_somos.css';  
+@import 'seccion_titulos.css';
+@import 'seccion_cards.css';
+@import 'quienes_somos.css';
+@import 'quienes_somos2.css';
 @import 'productos.css';  
-@import 'servicios.css';  
+@import 'produccion.css';  
 @import 'nuestros_clientes.css';
 @import 'formulario.css';
 @import 'footer.css';
+@import 'modals.css';
 @import 'social_fab.css';
 *{
     margin: 0px;
@@ -50,44 +54,40 @@
     
     
 }
-img {
-    /*anula facilidad de guardado de imagenes*/
+img {/*anula facilidad de guardado de imagenes*/
     pointer-events: none;
 }
 .clearfix{
     clear:both;
     float:none;
 }
-
+.barra_inicio{
+    height: 63px;
+    width: 100%;
+}
 .container_center{
+    
     margin: 2% auto;
     padding: .2% .2%;
     width: 96%;
     max-width: var(--max-width_page);
     /*background-color: var(--white);*/
-    background-color: var(--verde_primario);
+    background-color: rgb(211, 231, 213);
     box-shadow: 0 1px 1px 0 rgba(99, 99, 99, 0.2);
     border-radius: .5rem;
-    
+}
+.background_loading_img{ /*Carga imagen.gif de carga en un div*/
+    background-image: url(../images/otros/ajax-loader.gif);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50%;
 }
 
 
-.barra_inicio{
-    height: 63px;
-    width: 100%;
-}
 
 
-/*Formato de texto_titulos*/
-.text_titulo{
-    color: var(--negro_primario_texto);
-    text-shadow: 1px 1px 3px var(--verde_primario);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: .5rem;
-}
 
 .box_sections_format{
-    
     border-radius: .5rem;
     background-color: var(--verde_agua_marina);
     /*
@@ -97,55 +97,6 @@ img {
     background: rgb(131,196,81);
     background: linear-gradient(0deg, rgba(131,196,81,1) 0%, rgba(237,247,236,1) 80%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-}
-/*Formato de texto_titulos*/
-.box_border_format{
-    border-radius: .5rem;
-    background-color: var(--white);
-    box-shadow: 0 4px 8px 0 rgba(0,124,0,0.2);
 }
 
-/*Tititulos de cada sección*/
-.container_titulos_seccion{
-    width: 100%;
-    height: 150px;
-    text-align: center;
-    /*background: rgb(236, 255, 225);
-    box-shadow: 0 4px 8px 0 rgba(0,124,0,0.2);*/
-    border-radius: .5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.divisor_titles{
-    width: 70%;
-    height: .1rem;
-    background-color: black;
-    display: block;
-    margin: auto;
-}
-
-@media (max-width: 768px){
-    .container_titulos_seccion{
-        height: 120px;
-    }
-}
-/*
-.container_titulos_seccion h2:after{
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    box-shadow: 1px 1px 2px 0px white;
-    background-color: var(--negro_primario_texto);
-    border-radius: 5px;
-    bottom: -20%;
-    right: 0%;
-    margin: 0 auto;
-    transform: translate(0%, 0%);
-
-}
-*/
 
