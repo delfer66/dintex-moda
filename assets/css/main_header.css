@@ -1,0 +1,130 @@
+.main_header_container{
+    max-width: 3840px;
+    max-height: 1080px;
+    position: relative;
+    margin: auto;
+}
+.main_img img{
+    width: 100%;
+    height: 71.05%;
+    max-width: 1520px;
+    max-height: 1080px;
+}
+.main_text_container{
+    position: absolute;
+    bottom: 3rem;
+    right: 0rem;
+    padding: .5rem;
+    margin:  auto 2%;
+    text-align: right;
+    transform: translate(0%, 0%);
+    z-index: 1;
+    text-shadow: 2px 2px 3px var(--white);
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: .5rem;
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+.logo_dintex_header{
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    transform: translate(0%, -50%);
+    z-index: 10;
+    width: 50%;
+}
+
+.main_img{
+    width: 50%;
+    
+}
+.main_img img{
+    width: 100%;
+}
+.main_img_space{
+    width: 50%;
+}
+
+.main_img_space img{
+    width: 23.07%;
+    height: 100%;
+}
+
+.gradiente_space{
+    background: rgb(131,196,81);
+    background: linear-gradient(270deg, rgba(131,196,81,1) 0%, rgba(237,247,236,0) 100%);
+}
+
+
+@media (max-width: 1440px){
+    .main_img{
+        width: 60%;
+    }
+    .main_img_space{
+        width: 40%;
+    }
+    .main_text_container{
+        width: 70%;
+    }
+}
+@media (max-width: 1200px){
+    .main_img{
+        width: 79.2%;
+    }
+    .main_img_space{
+        width: 20.8%;
+    }
+    .main_text_container{
+        width: 70%;
+    }
+}
+@media (max-width: 768px){
+    .main_text_container{
+        width: 96%;
+        
+    }
+    /*
+    .logo_dintex_header{
+        position:static;
+        transform: translate(0%, 0%);
+         z-index: 1;
+        width: 70%;
+        display: block;
+        margin: 2% auto;
+    }*/
+    .logo_dintex_header{
+        top: 2%;
+        right: 2%;
+        transform: translate(0%, 0%);
+        width: 20%;
+    }
+    .main_img{
+        width: 100%;
+        overflow: hidden;
+    }
+    .main_img img{
+        width: 108.6%;
+        height: 108.6%;
+    }
+
+
+}
+
+@media (max-width: 576px){
+    .main_text_container{
+        margin: 2rem auto;
+        position: static;
+        text-align: center;
+        /*background-color: rgba(0, 0, 0, 0.15);*/
+        background: rgb(131,196,81);
+        background: linear-gradient(0deg, rgba(131,196,81,1) 0%, rgba(237,247,236,0) 100%);
+    
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    }
+    .main_header_container{
+        width: 100%;
+        height: 56.25%;
+        
+    }
+
+}

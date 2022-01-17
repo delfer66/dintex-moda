@@ -1,0 +1,26 @@
+
+
+.tip_show{
+    position: relative;
+}
+
+.tip_text{
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    padding: 0.1rem .5rem;
+    margin: auto;
+    text-align: center;
+    bottom: 1rem;
+    right: 50%;
+    transform: translate(50%, 0%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+}
+
+.tip_text_enable{
+    display: block;   
+}
+.tip_text_disable{
+    display: none;   
+}

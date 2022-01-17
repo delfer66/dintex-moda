@@ -24,8 +24,12 @@ window.addEventListener("load", event => {
         setTimeout(() => {
             var toast = new bootstrap.Toast(toastLiveExample)
             toast.show()
-            //console.log("1 Segundo esperado")
-          }, 10000);
+            //console.log("10 Segundo esperado")
+        }, 10000);
+        setTimeout(() => {
+            var registerBtn = document.querySelector('#send_form');
+            registerBtn.style.visibility = "visible";
+            registerBtn.style.display = "block";
+        }, 60000);
     }
-
 });

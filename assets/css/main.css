@@ -6,6 +6,7 @@
 @import 'animaciones.css';
 @import 'loading.css';
 @import 'navbar.css';
+@import 'main_header.css'; 
 @import 'header.css';  
 @import 'seccion_titulos.css';
 @import 'seccion_cards.css';
@@ -17,6 +18,7 @@
 @import 'formulario.css';
 @import 'footer.css';
 @import 'modals.css';
+@import 'tip_imagen.css';
 @import 'social_fab.css';
 *{
     margin: 0px;
@@ -82,7 +84,12 @@ img {/*anula facilidad de guardado de imagenes*/
     background-size: 50%;
     background-position: 50%;
 }
-
+.background_loading_img_header{ /*Carga imagen.gif de carga en un div*/
+    background-image: url(../images/otros/ajax-loader.gif);
+    background-repeat: no-repeat;
+    background-size: 20% ;
+    background-position: 50%;
+}
 
 
 
