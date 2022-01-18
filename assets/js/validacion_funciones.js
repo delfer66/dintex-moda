@@ -157,6 +157,7 @@ function validar_prov(){
     }else{
         $result.text('Seleccione la o las provincias donde realiza su actividad');
         $result.css('color', 'red');
+        prov_valido=false;
     }
 }
 //VALIDACION UNIFORMES REQUERIDOS
@@ -172,6 +173,7 @@ function validar_uni_req(){
     }else{
         $result.text('Por favor, seleccione la cantidad de uniformes en las que esta interesada/o');
         $result.css('color', 'red');
+        uni_req_valido=false;
     }
 }
 

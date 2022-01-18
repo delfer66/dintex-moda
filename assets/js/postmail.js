@@ -35,7 +35,7 @@
         var empresa = document.querySelector("#" + form_id_js + " [name='empresa']").value;
         var subject = "EMPRESA "+empresa.toUpperCase()+" a envia un correo desde la página WEB";
 
-        const mensaje_web = "Correo generado desde la página web dintexmoda.com, con los siguientes datos ingresados por un cliente.\n";
+        const mensaje_web = "Correo generado desde la página web dintexmoda.com, con los siguientes datos ingresados por el cliente.\n";
         empresa = "\nEmpresa: "+document.querySelector("#" + form_id_js + " [name='empresa']").value;
         const nombre = "\nNombre: "+document.querySelector("#" + form_id_js + " [name='nombre']").value;
         const telefono = "\nTelefono: "+document.querySelector("#" + form_id_js + " [name='telefono']").value;

@@ -50,3 +50,7 @@ function disable_click(){
     prov_texted=false;
     req_texted=false;
 }
+var option_uni_req = document.getElementById("inputuni_req").getElementsByTagName("option");
+option_uni_req.onclick = click_on_req;
+var option_prov = document.getElementById("inputProv").getElementsByTagName("option");
+option_prov.onclick = click_on_prov;
