@@ -620,7 +620,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputProv" class="form-label">Provincia</label>
-                                    <select id="inputProv" class="form-select" name="provincia" onclick="click_on_prov()">
+                                    <select id="inputProv" class="form-select" name="provincia" onchange="click_on_prov()">
                                         <option selected>Seleccione una opción</option>
                                         <option>Varias Provincias</option>
                                         <option>Pichincha</option>
@@ -633,7 +633,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <label for="inputUni" class="form-label">Uniformes requeridos</label>
-                                    <select id="inputuni_req" class="form-select" name="pedido" onclick="click_on_req()">
+                                    <select id="inputuni_req" class="form-select" name="pedido" onchange="click_on_req()">
                                         <option selected>Seleccione una opción</option>
                                         <option>10 a 20 Uniformes</option>
                                         <option>21 a 100 Uniformes</option>
@@ -654,7 +654,8 @@
                                 <div class="col-12">
                                     <div class="g-recaptcha" data-theme="light"
                                         data-sitekey="6LeYIOwdAAAAAFCZbdex8tGRVQ1J1EzYfdQxTroe" data-size="normal"
-                                        data-callback="pushed_bottom" data-expired-callback="captchaExpired">
+                                        data-callback="pushed_bottom" data-expired-callback="captchaExpired"
+                                        style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;">
                                     </div>
                                 </div>
                                 <div id="helper_form" class="form-text col-12 my-1">Click en el botón de catpcha para desbloquear el envio del formulario</div>
