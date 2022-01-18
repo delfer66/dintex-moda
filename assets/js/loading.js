@@ -17,7 +17,7 @@ $('#imagen_portada')
 
 //quita el scroll mientras carga la pagina
 var scroll_Stop = document.getElementById('body_id');
-scroll_Stop.classList.remove('stop-scroll');
+if(debug_scroll) scroll_Stop.classList.remove('stop-scroll');
 
 //quita la pantalla de carga cuanto los elementos estan cargados
 var image1 = document.getElementById('imagen_portada');
@@ -33,6 +33,7 @@ $(document).ready(function() {
             $("#loader").fadeOut(1000);
             clearInterval(intervalo1);
             
+            if(!debug_scroll) scroll_Stop.classList.remove('stop-scroll');
         }
     },1000);
 });

@@ -77,7 +77,7 @@ function validar_telf(){
 }
 const validateTelf = (telf) => {
     return telf.match(
-        /^\d{7,14}$/
+        /^[\d\+]{7,14}$/
     );
 };
 //VALIDACION EMAIL

@@ -1,4 +1,5 @@
 const debug=false;
+const debug_scroll=false;
 //se usa en => click_texted_inputs.js
 var validado_click=false;
 //se usa en => click_texted_inputs.js
@@ -78,7 +79,7 @@ function set_modal_text1(valor){
     const titulo_modal=document.getElementById("Modal_form_Label");
     const text_modal=document.getElementById("Modal_form_text");
     if(valor){
-        titulo_modal.innerHTML = "Enviado...";
+        titulo_modal.innerHTML = "Enviando...";
         titulo_modal.style.color = 'black';
         text_modal.innerHTML = 
         "Espere un momento se esta enviando el formulario si desea mas información, escribanos a nuestras redes sociales.";
