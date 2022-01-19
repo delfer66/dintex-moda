@@ -21,7 +21,7 @@
 }
 
 .alto_texto_productos{
-    height: 50px;
+    height: 10rem;
 }
 .container_productos_cards p,
 .container_productos_cards h3{
@@ -47,6 +47,12 @@
     .container_slider_productos img{
         width: 50%;
     }
-
+    .alto_texto_productos{
+        height: 14rem;
+    }
 }
-
+@media (max-width: 576px){
+    .alto_texto_productos{
+        height: auto;
+    }
+}
